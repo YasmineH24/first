@@ -1,0 +1,53 @@
+<div style="margin: 10%;">
+<h1 id="title" >Hello evreyone  &hearts; </h1>
+<h2 class="cy">First h2</h2>
+<h2 style="background-color:black;padding-left:30px">First h2</h2>
+<style>
+    #title{
+        color:turquoise
+    }
+    .cy{
+        color: rgb(226, 134, 43);
+        font-weight: 500;
+        font-weight: bold;
+    }
+</style>
+<a href="https://www.allocine.fr/netflix/film/" target="_blank">click here to watch best movies</a>
+</div>
+<div class="grid-container">
+    <div class="item" style="background-color:rgb(116, 171, 235);">1</div>
+    <div class="item" style="background-color:rgb(210, 4, 4);">2</div>
+    <div class="item" style="background-color:rgb(212, 199, 123);">3</div>
+    <div class="item" style="background-color:rgb(244, 105, 105);">4</div>
+    <div class="item" style="background-color:rgb(164, 95, 201);">5</div>
+    <div class="item" style="background-color:rgb(0, 234, 255);">6</div>
+    <div class="item" style="background-color:rgb(255, 235, 160);">7</div>
+</div>
+<style>
+    .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows:repeat(2,1fr) ;
+  row-gap: 10px;
+}
+</style>
+<script>
+    title=document.ElementById("title")
+    console.log(title)
+    title.style.color="black"
+    elements=document.getElementsByClassName("element")
+    console.log(elements)
+    while(True) {
+        for(let i = 0; i < elements.length; i++) {
+            elements[i].style.color = "red";
+            setTimeout(function () {
+                elements[i].style.color = "green";
+            }, 2000 * (i + 1));
+        
+        }
+        elements[i].style.color = "red";}
+</script>
